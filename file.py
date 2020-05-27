@@ -27,7 +27,7 @@ def create_temp_file(size, file_name, file_content):
     return random_file_name
 
 
-# s3_resource.meta.client.upload_file(Filename=file_name, Bucket=bucket_name, Key=file_name)
+s3_resource.meta.client.upload_file(Filename=file_name, Bucket=bucket_name, Key=file_name)
 
 #uploading a file on s3 
 s3_resource.Object(bucket_name, file_name).upload_file(Filename=file_name)
